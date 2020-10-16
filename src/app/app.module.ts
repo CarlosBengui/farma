@@ -1,3 +1,4 @@
+import { CursoModule } from './curso/curso.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatSliderModule } from '@angular/material/slider';
@@ -9,12 +10,14 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
-      HomeComponent
+      HomeComponent,
+      LoginComponent
    ],
   imports: [
     BrowserModule,
@@ -24,7 +27,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatTabsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    CursoModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
