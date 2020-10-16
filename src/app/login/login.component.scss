@@ -1,31 +1,24 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    font-size: 1.5rem;
-}
-.login{
-    margin: 150px auto ;
+.container{
     width: 500px;
+    margin: 150px auto 0px auto;
+    font-size: 12pt;
 }
-
-p{
-    margin: 10px;
-}
-
-input{
+.form-control{
+    width: 400px;
     padding: 15px;
-    margin-top: 10px;
-    width: 500px;
-    background-color: #9d9da828;
+    text-align: center;
     border-radius: 10px;
 }
-
-
 button{
-    padding: 15px;
+    width: 200px;
+    padding: 10px;
     margin-top: 15px;
-    width: 535px;
+    margin-bottom: 15px;
+    font-size: 16pt;
+    border-radius: 10px;
+    background-color: #1d1de9a2;
 }
-h1{
-    text-align: center;
+
+*{
+    background-image: url('/');
 }

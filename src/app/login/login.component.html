@@ -1,17 +1,25 @@
 
 
-<div class="login">
-  <h1>LOGIN</h1>
-  <form action="">
-    <div>
-      <input type="email" class="email" placeholder="Ensert you email">
-    </div>
+<div class="container col-md-6 mt-5 mx-auto">
+  <div class="row">
+      <div class="col-md-6 mt-5 mx-auto">
+          <form (submit)="login()">
 
-    <div>
-      <input type="password" class="password" placeholder="Ensert you password">
-    </div>
-    <button>Login</button>
-    <p>Esqueceu a sua <strong>password? Clique aqui</strong></p>
-    <p>haven´t  resgisted yet?</p>
-  </form>
+              <h1 class="h3 mb-3 font-weight-normal">Please Sign in</h1>
+
+              <div class="form-group">
+                   <p><label for="email">Email Address</label></p>
+                  <input type="email" class="form-control" name="email" placeholder="Enter email">
+              </div>
+
+              <div class="form-group">
+                  <p><label for="password">Pass word</label></p>
+                  <input type="password" class="form-control" name="password" placeholder="Enter password" >
+              </div>
+              <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+
+          </form>
+          <p><a href="#">You lost you password?</a> <a href="#">Register here!...</a></p>
+      </div>
+  </div>
 </div>
